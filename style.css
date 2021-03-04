@@ -1,0 +1,28 @@
+    
+    body 
+    {
+        background-color: rgb(34, 29, 34);  
+    }
+
+    #Top
+    {
+        text-align: center;
+        display: block;
+    }
+
+    #TopText
+    {
+        color: white;
+    }
+
+    #TopIframe
+    {
+       margin-top: 50px;   
+    }
+
+    #TopLogo img
+    {
+        margin-top: 100px;
+        width: 30%;
+        height: 30%;
+    }
