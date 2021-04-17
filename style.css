@@ -1,28 +1,64 @@
-    
-    body 
-    {
-        background-color: rgb(34, 29, 34);  
-    }
+@font-face {
+    font-family: manrope;
+    src: url(assets/fonts/Manrope-Medium.ttf);
+}
 
-    #Top
-    {
-        text-align: center;
-        display: block;
-    }
+*{
+  padding: 0;
+  margin: 0; 
+}
 
-    #TopText
-    {
-        color: white;
-    }
+.wrapper{
+    background: rgb(34, 29, 34);
+    background-size: cover;
+    height: 100vh;
+}
 
-    #TopIframe
-    {
-       margin-top: 50px;   
-    }
+.navigationbar{
+    height: 110px;
+    width: 100%;
+    background: rgb(27, 20, 31)
+}
 
-    #TopLogo img
-    {
-        margin-top: 100px;
-        width: 30%;
-        height: 30%;
-    }
+.navbarlogo{
+    width: 150px;
+    height: auto;
+    padding: 15px 100px;
+    margin-left: -50px;
+}
+
+.navigationbar ul{
+    float: right;
+    margin-right: 50px;    
+}
+
+.navigationbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navigationbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'manrope';
+    transition: .3s;
+}
+
+.navigationbar ul li a.active,
+.navigationbar ul li a:hover{
+    background: rgb(224, 80, 255);
+    border-radius: 2px;
+}
+
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: 'manrope';
+    user-select: none;
+}
