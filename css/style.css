@@ -1,6 +1,9 @@
 @font-face {
-    font-family: manrope;
-    src: url(assets/fonts/Manrope-Medium.ttf);
+    font-family: 'manropemedium';
+    src: url(./assets/fonts/Manrope-Medium.ttf) format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
@@ -44,7 +47,7 @@
     color:white;
     font-size: 20px;
     padding: 6px 13px;
-    font-family: 'manrope';
+    font-family: 'manropemedium';
     transition: .3s;
 }
 
@@ -59,6 +62,6 @@
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
-    font-family: 'manrope';
+    font-family: 'manropemedium';
     user-select: none;
 }
