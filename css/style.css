@@ -47,7 +47,7 @@
     color:white;
     font-size: 20px;
     padding: 6px 13px;
-    font-family: 'manropemedium';
+    font-family: 'manropemedium', sans-serif;
     transition: .3s;
 }
 
@@ -62,6 +62,6 @@
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
-    font-family: 'manropemedium';
+    font-family: 'manropemedium', sans-serif;
     user-select: none;
 }
