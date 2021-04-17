@@ -6,16 +6,23 @@
     font-style: normal;
 }
 
+
+
 *{
   padding: 0;
   margin: 0; 
 }
 
-.wrapper{
+
+
+
+body{
     background: rgb(34, 29, 34);
     background-size: cover;
     height: 100vh;
 }
+
+
 
 .navigationbar{
     height: 110px;
@@ -57,11 +64,13 @@
     border-radius: 2px;
 }
 
-.wrapper .center{
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+
+
+.center{
     font-family: 'manropemedium', sans-serif;
-    user-select: none;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
