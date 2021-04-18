@@ -88,7 +88,6 @@ body
     /* Smooth Scrolling*/
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type:y mandatory;
 }
 
  /* Sections*/
@@ -101,7 +100,6 @@ justify-content: center;
 text-align: center;
 width: 100%;
 height: 100vh;
-scroll-snap-align: center;
 }
 
 section h1
@@ -111,38 +109,11 @@ color: white;
 font-family: 'manropemedium', sans-serif;
 }
 
-
-/*Home Section*/
-.home-section h1
-{
-    margin-bottom: 30%;
-}
-
-/*Game Section*/
-.games-section ul
-{
-    float: right;
-    align-self: center;
-    margin-bottom: 10%;
-}
-
-.games-section ul li
-{
-    list-style: none;
-    display: inline-block;
-    line-height: 20px;
-}
-
-.games-section ul li img
-{
-    width: auto;
-    height: 200px;
-    transition: .3s;
-}
-
-.games-section ul li img:hover
-{
-    transform: scale(1.2);
+.itch-frame{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
 }
 
 /*About Section*/
