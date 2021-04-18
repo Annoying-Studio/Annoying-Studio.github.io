@@ -25,7 +25,6 @@ body
     background: rgb(34, 29, 34);
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
 }
 
 /*Navigationbar*/
@@ -34,10 +33,19 @@ body
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
+    display:flex;
     height: 110px;
     width: 100%;
     background: rgb(27, 20, 31)
+}
+
+.navigationbar p
+{
+    margin-top: 30px;
+    margin-left: 50%;
+    font-size: 40px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
 }
 
 .navbarlogo
@@ -80,63 +88,87 @@ body
     border-radius: 2px;
 }
 
+
+
+
 .container
 {
     width: 100%;
     height: 100%;
-    
-    /* Smooth Scrolling*/
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
- /* Sections*/
-section
+.content
 {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
-height: 100vh;
+    height: 120%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: center;
 }
 
-section h1
+.content h1
 {
-font-size: 50px;
-color: white;
-font-family: 'manropemedium', sans-serif;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
 }
 
-.itch-frame{
+.content h2{
+    padding-top: 10px;
+    font-size: 40px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
+}
+
+
+.content p
+{
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
+    line-height: 30px;
+    text-align: left;
+}
+
+.content ul{
+    list-style: none;
+}
+
+.content li p
+{
+    font-size: 20px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
+    color: white;
+}
+
+.itchframe{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
 }
 
-/*About Section*/
-.about-section h1
-{
-    margin-bottom: 30%;
-}
-
-/*About Footer*/
+/*Footer*/
 footer
 {
-bottom: 0;
-z-index: 1;
-width: 100%;
-height: 20px;
-align-items: center;
-}
-
-.footer-content
-{
+    padding-top: 30px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 0px;
+    left: 0px;
+    right: 0px;
     background: rgb(27, 20, 31);
-    width: auto;
-    height: 200px;
+    position: static;
 }
 
 .footer-upbtn img
