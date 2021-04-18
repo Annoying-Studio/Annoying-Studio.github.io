@@ -179,7 +179,7 @@ font-family: 'manropemedium', sans-serif;
 
 .about-section h1
 {
-    margin-bottom: 10%;
+    
 }
 
 .about-section p
@@ -187,10 +187,46 @@ font-family: 'manropemedium', sans-serif;
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100vh;
+    height: 50px;
+    color: white;
+    font-family: 'manropemedium', sans-serif;
+    line-height: 30px;
+}
+
+.about-section h2
+{
     font-size: 20px;
     color: white;
     font-family: 'manropemedium', sans-serif;
+}
+
+.about-section ul{
+    margin-top: 30px;
+    float: left;
+    align-self: center;
+}
+
+.about-section ul li
+{
+    list-style: none;
+    margin: 0 15px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.about-section ul li img
+{
+    width: auto;
+    height: 45px;
+    transition: .3s;
+}
+
+.about-section ul li img:hover
+{
+    transform: scale(1.2);
 }
 
 /*About Footer*/
