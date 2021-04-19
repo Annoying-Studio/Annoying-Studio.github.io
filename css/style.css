@@ -26,6 +26,20 @@ body
     background-size: cover;
     height: 100vh;
     overflow: hidden;
+
+    animation: transitionIn 0.7s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
 
 /*Navigationbar*/
@@ -37,7 +51,7 @@ body
     display: flex;
     height: 110px;
     width: 100%;
-    background: rgb(27, 20, 31)
+    background: rgb(27, 20, 31);
 }
 
 .navigationbar p
@@ -87,6 +101,7 @@ body
 {
     background: rgb(224, 80, 255);
     border-radius: 2px;
+    font-size: 30px;
 }
 
 .container
@@ -128,7 +143,20 @@ font-family: 'manropemedium', sans-serif;
 {
     width: 200px;
     height: 200px;
+
+    animation: LogoTransIn 0.7s;
 }
+
+@keyframes LogoTransIn{
+    from{
+        transform: scale(1.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
 
 /*Home Section*/
 .home-section h1
@@ -136,13 +164,13 @@ font-family: 'manropemedium', sans-serif;
    
 }
 
+/*Game Section*/
 .games-section
 {
     width: 100%;
     height: 100vh;
 }
 
-/*Game Section*/
 .games-section ul
 {
     float: right;
@@ -167,6 +195,8 @@ font-family: 'manropemedium', sans-serif;
 .games-section ul li img:hover
 {
     transform: scale(1.2);
+    opacity: 0.7;
+
 }
 
 /*About Section*/
@@ -176,7 +206,6 @@ font-family: 'manropemedium', sans-serif;
     height: 80vh;
 }
 
-
 .about-section h1
 {
     
@@ -184,13 +213,14 @@ font-family: 'manropemedium', sans-serif;
 
 .about-section p
 {
-    text-align: left;
+    text-align: center;
+    display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
     font-size: 20px;
     width: 100vh;
-    height: 50px;
+    height: 100px;
     color: white;
     font-family: 'manropemedium', sans-serif;
     line-height: 30px;
